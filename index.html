@@ -1,0 +1,27 @@
+<html ng-app="SocialNetwork">
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="app/css/main.css" rel="stylesheet" />
+    </head>
+     <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
+            <div class="container">
+                <div>
+                    <input type="text" ng-model="login.email">
+                    <input type="password" ng-model="login.password">
+                    <button ng-click="logUser()">Login</button>
+                    <a ui-sref="signUp">New User</a>
+                </div>
+            </div>
+        </nav>
+    <body>
+       
+        <div ui-view></div>
+    </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<script src="app/app.js"></script>
+<script src="app/signup/signup-controller.js"></script>
+<script src="app/navigation/navigation-controller.js"></script>
+
+</html>
